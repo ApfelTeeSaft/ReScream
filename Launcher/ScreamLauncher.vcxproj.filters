@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files"><UniqueIdentifier>{2C5AB23B-B7B0-4E44-A1D1-133B57D84F3E}</UniqueIdentifier></Filter>
+    <Filter Include="Source Files\Core"><UniqueIdentifier>{A2ECBD1F-52D8-45C2-81A6-B621130DF4AB}</UniqueIdentifier></Filter>
+    <Filter Include="Source Files\Runtime"><UniqueIdentifier>{3FD71127-7C7E-498E-B43E-C71EDBA2A98B}</UniqueIdentifier></Filter>
+    <Filter Include="Source Files\UI"><UniqueIdentifier>{D4AB32D8-CED2-4D77-8130-6493C43CE504}</UniqueIdentifier></Filter>
+    <Filter Include="Header Files"><UniqueIdentifier>{216F7A91-BCE5-4C47-A66D-F19398F05C53}</UniqueIdentifier></Filter>
+    <Filter Include="Resource Files"><UniqueIdentifier>{EB87A0FA-2FF2-44B7-A070-43A5C10434AB}</UniqueIdentifier></Filter>
+    <Filter Include="Assets"><UniqueIdentifier>{483B68D4-4E50-4977-A3D1-7C76AB5AA737}</UniqueIdentifier></Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="src\globals.asm"><Filter>Source Files\Core</Filter></MASM>
+    <MASM Include="src\paths.asm"><Filter>Source Files\Core</Filter></MASM>
+    <MASM Include="src\main.asm"><Filter>Source Files\Core</Filter></MASM>
+    <MASM Include="src\fileutil.asm"><Filter>Source Files\Runtime</Filter></MASM>
+    <MASM Include="src\sha256.asm"><Filter>Source Files\Runtime</Filter></MASM>
+    <MASM Include="src\network.asm"><Filter>Source Files\Runtime</Filter></MASM>
+    <MASM Include="src\manifest.asm"><Filter>Source Files\Runtime</Filter></MASM>
+    <MASM Include="src\selfupdate.asm"><Filter>Source Files\Runtime</Filter></MASM>
+    <MASM Include="src\updater.asm"><Filter>Source Files\Runtime</Filter></MASM>
+    <MASM Include="src\injector.asm"><Filter>Source Files\Runtime</Filter></MASM>
+    <MASM Include="src\worker.asm"><Filter>Source Files\Runtime</Filter></MASM>
+    <MASM Include="src\theme.asm"><Filter>Source Files\UI</Filter></MASM>
+    <MASM Include="src\ui.asm"><Filter>Source Files\UI</Filter></MASM>
+    <MASM Include="src\visualizer.asm"><Filter>Source Files\UI</Filter></MASM>
+    <MASM Include="src\window.asm"><Filter>Source Files\UI</Filter></MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common.inc"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="src\globals.inc"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="resource.h"><Filter>Resource Files</Filter></ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources.rc"><Filter>Resource Files</Filter></ResourceCompile>
+    <None Include="assets\scream.ico"><Filter>Assets</Filter></None>
+    <None Include="README.md" />
+    <None Include="build.bat" />
+    <None Include="clean.bat" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+#pragma once
+
+namespace Client {
+namespace LuaFixes {
+
+static const char kF4FixSource[] = R"RSC_F4(@CLIENT_F4_LUA_SOURCE@)RSC_F4";
+static const char kKeybindFixSource[] = R"RSC_KEYS(@CLIENT_KEYBIND_LUA_SOURCE@)RSC_KEYS";
+static const char kFovFeatureSource[] = R"RSC_FOV(@CLIENT_FOV_LUA_SOURCE@)RSC_FOV";
+static const char kPerformanceFeatureSource[] = R"RSC_PERF(@CLIENT_PERFORMANCE_LUA_SOURCE@)RSC_PERF";
+static const char kQualityOfLifeFeatureSource[] = R"RSC_QOL(@CLIENT_QOL_LUA_SOURCE@)RSC_QOL";
+static const char kLobbyBrowserFixSource[] = R"RSC_LOBBY(@CLIENT_LOBBY_LUA_SOURCE@)RSC_LOBBY";
+static const char kVersionOverrideSource[] = R"RSC_VER(@CLIENT_VERSION_LUA_SOURCE@)RSC_VER";
+static const char kStaticBundleProbeSource[] = R"RSC_PROBE(@CLIENT_STATIC_PROBE_LUA_SOURCE@)RSC_PROBE";
+
+} // namespace LuaFixes
+} // namespace Client
